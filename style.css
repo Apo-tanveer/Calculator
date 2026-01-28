@@ -1,0 +1,46 @@
+body{
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+}
+
+#container{
+    border: solid red;
+    display: flex;
+    flex-direction: column;
+    max-height: 700px;
+    max-width: 480px;
+    
+}
+
+#screen{
+    border: solid red;
+    margin: 10px;
+    height: 100px;
+}
+
+#input{  
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.input_button{
+    height: 60px;
+    width: 80px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+
+}
+
+.oper_button{
+    height: 60px;
+    width: 90px;
+    margin-left: 10px;
+}
+
+#equals_to{
+    height: 60px;
+    width: 190px;
+    margin-left: 10px;
+}
