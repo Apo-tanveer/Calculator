@@ -10,6 +10,9 @@ btn.forEach(button=>{
 // _________________________________NUMBERS__________________________________________________________________________________________________________________________________        
         if(e.target.className ==="numbers"){
 
+            if(e.target.id === "dot" && numbersList[numbersList.length-1].includes(".") ){
+                return;
+            }
             screenText.textContent += value;
 
             numbersList[numbersList.length-1] += value;          
@@ -56,10 +59,18 @@ btn.forEach(button=>{
             operatorsList.push("");
             result.textContent = "";
             screenText.textContent = "";
-        }
+        }        
 // _________________________________SHOW CALCULATION__________________________________________________________________________________________________________________________________________________________________   
         if(numbersList[numbersList.length-1].length>=1){
             result.textContent = cal(numbersList, operatorsList);
+        }
+
+        if(result.textContent ==="Infinity"){
+            result.textContent = "Can't multiply by zero";
+        }
+
+        if(result.textContent.length>12){
+            result.textContent = (Number(result.textContent).toFixed(16))
         }
     } )
 })

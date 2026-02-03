@@ -20,6 +20,7 @@ body{
     height: 100px;
     display: flex;
     justify-content: end;
+    border: solid red;
 }
 
     
@@ -56,11 +57,14 @@ body{
 
 #screenText{
     align-self: last baseline;
+    border: solid red;
 }
 
 #result{
     
     align-self: baseline;
     display: flex;
+    border: solid red;
+    position: absolute;
 }
 
